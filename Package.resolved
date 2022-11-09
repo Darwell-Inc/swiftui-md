@@ -3,28 +3,19 @@
     {
       "identity" : "swift-cmark",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/shaps80/swift-cmark.git",
+      "location" : "https://github.com/ivalx1s/swift-cmark.git",
       "state" : {
-        "revision" : "476f7b4fcf12eba381b4aaed8987006fd8fcec9c",
-        "version" : "0.2.0"
+        "revision" : "9f8e92ab70f27e618080c0e9b349618d92f8261d",
+        "version" : "0.0.221109"
       }
     },
     {
       "identity" : "swift-markdown",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/shaps80/swift-markdown",
+      "location" : "git@github.com:ivalx1s/swift-markdown.git",
       "state" : {
-        "revision" : "83188dee2dbccfa70124c56055dd0b759d3e4ec3",
-        "version" : "0.3.0"
-      }
-    },
-    {
-      "identity" : "swiftuibackports",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/shaps80/SwiftUIBackports",
-      "state" : {
-        "revision" : "252d01385a0730cc604310373ac934a64f1d4b1a",
-        "version" : "1.8.2"
+        "revision" : "8e66c2130973ace467a93310e8e580ed025274e0",
+        "version" : "0.0.221109"
       }
     }
   ],

@@ -2,9 +2,10 @@
 ![ios](https://img.shields.io/badge/iOS-0C62C7)
 [![swift](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fshaps80%2FMarkdownText%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/shaps80/MarkdownText)
 
-# MarkdownText
+# swiftui-md
 
-A native SwiftUI view for rendering Markdown text in an iOS or macOS app.
+A native SwiftUI view for rendering Markdown text in an iOS or macOS app. Fork of [shaps80/MarkdownText](https://github.com/shaps80/MarkdownText)
+
 
 ## Preview
 

@@ -1,8 +1,8 @@
 import SwiftUI
-import SwiftUIBackports
+
 
 struct QuoteMarkdownVisibility: EnvironmentKey {
-    static let defaultValue: Backport<Any>.Visibility = .automatic
+    static let defaultValue: Visibility = .automatic
 }
 
 internal extension EnvironmentValues {
@@ -14,7 +14,7 @@ internal extension EnvironmentValues {
 
 public extension View {
     /// Sets the visibility for quote markdown elements
-    func markdownQuote(_ visibility: Backport<Any>.Visibility) -> some View {
+    func markdownQuote(_ visibility: Visibility) -> some View {
         environment(\.markdownQuoteListVisibility, visibility)
     }
 }

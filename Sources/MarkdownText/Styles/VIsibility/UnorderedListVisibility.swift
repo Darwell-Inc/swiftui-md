@@ -1,8 +1,8 @@
 import SwiftUI
-import SwiftUIBackports
+
 
 struct UnorderedListItemMarkdownVisibility: EnvironmentKey {
-    static let defaultValue: Backport<Any>.Visibility = .automatic
+    static let defaultValue: Visibility = .automatic
 }
 
 internal extension EnvironmentValues {
@@ -14,13 +14,13 @@ internal extension EnvironmentValues {
 
 public extension View {
     /// Sets the visibility for unordered item markdown elements
-    func markdownUnorderedListItem(_ visibility: Backport<Any>.Visibility) -> some View {
+    func markdownUnorderedListItem(_ visibility: Visibility) -> some View {
         environment(\.markdownUnorderedListItemVisibility, visibility)
     }
 }
 
 struct UnorderedListItemBulletMarkdownVisibility: EnvironmentKey {
-    static let defaultValue: Backport<Any>.Visibility = .automatic
+    static let defaultValue: Visibility = .automatic
 }
 
 internal extension EnvironmentValues {
@@ -32,7 +32,7 @@ internal extension EnvironmentValues {
 
 public extension View {
     /// Sets the visibility for unordered bullet markdown elements
-    func markdownUnorderedListItemBullet(_ visibility: Backport<Any>.Visibility) -> some View {
+    func markdownUnorderedListItemBullet(_ visibility: Visibility) -> some View {
         environment(\.markdownUnorderedListItemBulletVisibility, visibility)
     }
 }

@@ -1,8 +1,8 @@
 import SwiftUI
-import SwiftUIBackports
+
 
 struct ThematicBreakMarkdownVisibility: EnvironmentKey {
-    static let defaultValue: Backport<Any>.Visibility = .automatic
+    static let defaultValue: Visibility = .automatic
 }
 
 internal extension EnvironmentValues {
@@ -14,7 +14,7 @@ internal extension EnvironmentValues {
 
 public extension View {
     /// Sets the visibility for thematic break markdown elements
-    func markdownThematicBreak(_ visibility: Backport<Any>.Visibility) -> some View {
+    func markdownThematicBreak(_ visibility: Visibility) -> some View {
         environment(\.markdownThematicBreakVisibility, visibility)
     }
 }

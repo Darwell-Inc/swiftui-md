@@ -1,8 +1,8 @@
 import SwiftUI
-import SwiftUIBackports
+
 
 struct CheckListItemMarkdownVisibility: EnvironmentKey {
-    static let defaultValue: Backport<Any>.Visibility = .automatic
+    static let defaultValue: Visibility = .automatic
 }
 
 internal extension EnvironmentValues {
@@ -14,13 +14,13 @@ internal extension EnvironmentValues {
 
 public extension View {
     /// Sets the visibility for checklist item markdown elements
-    func markdownCheckListItem(_ visibility: Backport<Any>.Visibility) -> some View {
+    func markdownCheckListItem(_ visibility: Visibility) -> some View {
         environment(\.markdownCheckListItemVisibility, visibility)
     }
 }
 
 struct CheckListItemBulletMarkdownVisibility: EnvironmentKey {
-    static let defaultValue: Backport<Any>.Visibility = .automatic
+    static let defaultValue: Visibility = .automatic
 }
 
 internal extension EnvironmentValues {
@@ -32,7 +32,7 @@ internal extension EnvironmentValues {
 
 public extension View {
     /// Sets the visibility for checklist bullet markdown elements
-    func markdownCheckListItemBullet(_ visibility: Backport<Any>.Visibility) -> some View {
+    func markdownCheckListItemBullet(_ visibility: Visibility) -> some View {
         environment(\.markdownCheckListItemBulletVisibility, visibility)
     }
 }

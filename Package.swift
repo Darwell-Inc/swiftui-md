@@ -1,4 +1,4 @@
-// swift-tools-version: 5.6
+// swift-tools-version: 5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "MarkdownText",
     platforms: [
-        .iOS(.v13),
-        .macOS(.v11),
+        .iOS(.v16),
+        .macOS(.v13),
     ],
     products: [
         .library(
@@ -16,15 +16,13 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/shaps80/swift-markdown", .upToNextMinor(from: "0.3.0")),
-        .package(url: "https://github.com/shaps80/SwiftUIBackports", .upToNextMajor(from: "1.0.0")),
+		.package(url: "git@github.com:ivalx1s/swift-markdown.git", .upToNextMinor(from: .init(0, 0, 221109))),
     ],
     targets: [
         .target(
             name: "MarkdownText",
             dependencies: [
                 .product(name: "Markdown", package: "swift-markdown"),
-                .byName(name: "SwiftUIBackports"),
             ]
         ),
     ]

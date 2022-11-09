@@ -1,8 +1,8 @@
 import SwiftUI
-import SwiftUIBackports
+
 
 struct CodeMarkdownVisibility: EnvironmentKey {
-    static let defaultValue: Backport<Any>.Visibility = .automatic
+    static let defaultValue: Visibility = .automatic
 }
 
 internal extension EnvironmentValues {
@@ -14,7 +14,7 @@ internal extension EnvironmentValues {
 
 public extension View {
     /// Sets the visibility for code block markdown elements
-    func markdownCode(_ visibility: Backport<Any>.Visibility) -> some View {
+    func markdownCode(_ visibility: Visibility) -> some View {
         environment(\.markdownCodeVisibility, visibility)
     }
 }

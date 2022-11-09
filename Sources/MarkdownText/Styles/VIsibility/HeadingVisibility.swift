@@ -1,10 +1,10 @@
 import SwiftUI
-import SwiftUIBackports
+
 
 #warning("Refactor to allow for range based API as well (inspo: DynamicType API)")
 
 struct HeadingMarkdownVisibility: EnvironmentKey {
-    static let defaultValue: Backport<Any>.Visibility = .automatic
+    static let defaultValue: Visibility = .automatic
 }
 
 internal extension EnvironmentValues {
@@ -16,7 +16,7 @@ internal extension EnvironmentValues {
 
 public extension View {
     /// Sets the visibility for heading markdown elements
-    func markdownHeading(_ visibility: Backport<Any>.Visibility) -> some View {
+    func markdownHeading(_ visibility: Visibility) -> some View {
         environment(\.markdownHeadingVisibility, visibility)
     }
 }

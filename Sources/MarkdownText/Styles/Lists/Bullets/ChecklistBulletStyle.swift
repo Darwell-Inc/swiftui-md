@@ -1,5 +1,5 @@
 import SwiftUI
-import SwiftUIBackports
+
 
 /// A type that applies a custom appearance to checklist bullet markdown elements
 public protocol CheckListBulletMarkdownStyle {

@@ -1,5 +1,5 @@
 import SwiftUI
-import SwiftUIBackports
+
 
 /// A type that applies a custom appearance to image markdown elements
 public protocol ImageMarkdownStyle {
@@ -48,7 +48,7 @@ public struct ImageMarkdownConfiguration {
                         .init(content: .init(title ?? source)),
                     ]))
                 } else {
-                    Backport.AsyncImage(url: url, transaction: .init(animation: .default)) { phase in
+                    AsyncImage(url: url, transaction: .init(animation: .default)) { phase in
                         switch phase {
                         case let .success(image):
                             image
