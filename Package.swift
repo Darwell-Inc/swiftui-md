@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "MarkdownText",
+    name: "swiftui-markdown",
     platforms: [
         .iOS(.v16),
         .macOS(.v13),
