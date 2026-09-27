@@ -8,7 +8,7 @@ struct MarkdownTextBuilder: MarkupWalker {
     var blockElements: [MarkdownBlockElement] = []
     var lists: [MarkdownList] = []
 
-    init(document: Document) {
+    init(document: Markdown.Document) {
         visit(document)
     }
 
